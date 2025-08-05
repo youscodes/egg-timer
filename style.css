@@ -1,0 +1,79 @@
+body {
+  background-color: #fff6d5;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.window {
+  background-color: #ffef8b;
+  border: 3px solid #333;
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px #888;
+}
+
+.eggs img:hover {
+  transform: scale(1.2);
+}
+
+.eggs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+
+.eggs img {
+  width: 60px;
+  margin: 10px;
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: transform 0.2s ease;
+}
+
+
+
+.egg-option {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.egg-option img {
+  width: 60px;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+
+.egg-option.active {
+  transform: scale(1.3);
+}
+
+.egg-option p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+#timerDisplay {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #08209b;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 8px 16px;
+  font-family: inherit;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
